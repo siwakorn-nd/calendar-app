@@ -1,0 +1,338 @@
+Reset some default styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Modern app container styles */
+.app-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Modern header styles */
+.app-header {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Modern main content styles */
+.app-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Calendar container styles */
+.calendar-container {
+  margin-top: 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  font-size: 20px;
+  width: calc(70%-24px); /* Adjust the width as needed */
+  max-width: 100%; /* Ensure it doesn't exceed the parent container's width */
+  min-height: 500px;; /* Set the desired height */
+}
+
+.calendar-and-memos {
+  max-width: 100%;
+}
+
+/* Modern footer styles */
+.app-footer {
+  text-align: center;
+  margin: 16px 0;
+  color: #666;
+}
+
+/* Custom calendar tile styles */
+.custom-tile,
+.react-calendar__tile {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 20px 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Highlight today's date */
+.react-calendar__tile--now {
+  background-color: rgb(246, 214, 52);
+  color: black;
+}
+
+.react-calendar__tile--active {
+  background-color: #1CD6CE;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Modernize navigation buttons */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin: 2rem;
+}
+
+/* Larger navigation button styles */
+.react-calendar__navigation__arrow {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: none;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+
+/* Hover effect for navigation buttons */
+.react-calendar__navigation__label:hover,
+.react-calendar__navigation__arrow:hover {
+  background-color: #1CD6CE;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Larger font size for the current month/year label */
+.react-calendar__navigation__label {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEDB39;
+  color: white;
+  padding: 4px 0px;
+}
+
+/* Center-align individual day names */
+.react-calendar__month-view__weekdays__weekday {
+  flex: 1;
+  text-align: center;
+}
+
+/* Hover effect for custom tiles */
+.custom-tile:hover {
+  background-color: #1CD6CE;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Modal container styles */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+  z-index: 100; /* Ensure the modal is on top of other content */
+}
+
+/* Modal box styles */
+.modal-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  max-width: 400px;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Modal header styles */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Modal close button styles */
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Modal content styles */
+.modal-content {
+  margin-bottom: 16px;
+}
+
+/* Style form elements */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  height: 36px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.event-indicator {
+  background-color: #007BFF;
+  height: 10px;
+  width: 10px;
+}
+
+/* Style modal button */
+.modal-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect for modal button */
+.modal-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add memo button styles */
+.add-memo-button {
+  background-color: #1CD6CE;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  z-index: 200;
+}
+
+/* Memo list styles */
+.memo-list {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  font-size: 20px;
+  width: calc(30%); /* Adjust the width as needed */
+  max-width: 100%; /* Ensure it doesn't exceed the parent container's width */
+  min-height: 500px; /* Set the desired height */
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+/* Move memo list below calendar on smaller screens */
+@media (max-width: 1000px) {
+  .app-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calendar-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .memo-list {
+    width: calc(100% - 24px); /* Adjust the width to take up the full width */
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px){ 
+  .add-memo-button {
+    background-color: #1CD6CE;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+  }
+}
